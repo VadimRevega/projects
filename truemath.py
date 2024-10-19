@@ -1,7 +1,11 @@
 #true_math
 
-def dividetrue(num1, num2):
-    if num2 == 0:
-        return "Error: division by zero"
+# Если делим на 0, то возвращается inf (знак бесконечности)
+from math import inf
+
+
+def dividetrue(first, second):
+    if second == 0:
+        return inf
     else:
-        return num1 // num2
+        return first / second
